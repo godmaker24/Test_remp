@@ -20,7 +20,7 @@ jobs:
         run: pip install pyinstaller
       
       - name: Build app
-        run: pyinstaller --onefile --windowed --name REMP REMP_1.2.py
+        run: pyinstaller --onefile --windowed --name REMP --hidden-import=tkinter --hidden-import=tkinter.ttk REMP_1.2.py
       
       - uses: actions/upload-artifact@v4
         with:
