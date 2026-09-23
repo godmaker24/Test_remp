@@ -670,8 +670,9 @@ if __name__=='__main__':
                       xscrollcommand=xscrollbar.set,yscrollcommand=yscrollbar.set)      
     outputText.grid(row = 5,column = 0,columnspan = 5)
     outputText.configure(state ='disabled')
-       
-    root.mainloop()
+    
+    if __name__ == "__main__":  
+        root.mainloop()
 # Suriya 09/09/2026    
 
 
